@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comaptible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myport</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Tsewang Stanzin</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Tsewang Stanzin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()" >Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()" >Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()" >Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic-2.png" alt="my_profile-picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Tsewang Stanzin</h1>
+            <p class="section__text__p2">data science enthuiast</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download cv
+                </button>
+                
+                <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="my linkdIn" class="icon" onclick="location.href='https:linkden.com/'">
+                <img src="./assets/github.png" alt="my linkdIn" class="icon" onclick="location.href='https:github.com/'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <!-- in future add unstop id, kaggle, and instagram -->
+         <!-- do not forget -->
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" 
+                alt="profile picture" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div  class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="Experience icon" 
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>2+years <br /> free lanced </p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="education icon" 
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>B.tech  <br /> Computer Science (Data Science and Analytics) </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, repellendus tenetur ipsum cumque incidunt nostrum nulla fugit nobis. Commodi impedit aspernatur natus eius perspiciatis, non necessitatibus tempore ratione laboriosam asperiores! Hic voluptatum, ducimus eius eum officiis qui totam in mollitia eaque praesentium delectus. Odit pariatur tenetur laborum aliquid eos veniam.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Skill Set A
+                    </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                            <h3>Programming</h3>
+                            <p>Python: Advanced,<br> SQL : intermediate</p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Stastistics & Mathematics</h3>
+                            <p>Dscriptive and Inferential Statistics: Advanced,<br> Linear Algebra: Intermediate, <br>Calculus: Intermediate </p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Data Wrangling & Preparation</h3>
+                            <p>Data Cleaning: Expert,<br>ETL Processes: Advanced</p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Machine Learning & Modeling</h3>
+                            <p>Supervised Learning (Regression, Classification): Advanced,<br>Unsupervised Learning (Clustering, PCA): Intermediate,<br>Model Evaluation & Tuning: Advanced</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Data Visualization</h3>
+                            <p>
+                                Matplotlib: Advanced,<br>Seaborn: Intermediate,<br>Power BI: Intermediate
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+                </div>
+                <div class="details-container">
+                <h2 class="experience-sub-title">Skill set B
+                </h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Programming</h3>
+                            <p>Python: Advanced,<br> SQL:intermediate</p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Stastistics & Mathematics</h3>
+                            <p>Dscriptive and Inferential Statistics: Advanced,<br>Linear Algebra: Intermediate,<br> Calculus: Intermediate </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Data Wrangling & Preparation</h3>
+                            <p>Data Cleaning: Expert,<br>ETL Processes: Advanced</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Machine Learning & Modeling</h3>
+                            <p>Supervised Learning (Regression, Classification): Advanced,<br>Unsupervised Learning (Clustering, PCA): Intermediate,<br>Model Evaluation & Tuning: Advanced</p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Data Visualization</h3>
+                            <p>
+                                Matplotlib: Advanced,<br>Seaborn: Intermediate,<br>Power BI: Intermediate
+                            </p>
+                        </div>
+                    </article>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email.png" alt="email-icon"
+                    class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:example@gmail.com">Example@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin.png" alt="linkden-icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 tsewang stanzin. all rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
